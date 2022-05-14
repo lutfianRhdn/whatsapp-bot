@@ -1,23 +1,21 @@
 import React, { useEffect, useState } from "react";
 import { io } from "socket.io-client";
-
+import QRCode from "react-qr-code";
 function App() {
-	// const { socket, setSocket}= useState('')
+	const [whatsappData, setwhatsappData] = useState("");
 	useEffect(() => {
 		const socket = io("http://localhost:8080/");
-		// console.log(socket)
+		// console.log(whatsappData);
 		socket.on("whatsapp-data", (data) => {
-			console.log(data);
+			// console.log(data);
+			setwhatsappData(data);
 		});
-		// socket.emit('login','data')
-		// const test = await axios.get('http://localhost:8080/api/login');
-		// console.log()
-		// return 0;
-	}, []);
+	}, [setwhatsappData]);
 
 	return (
 		<div>
-			<h1>ok</h1>
+			{/* <h1>{whatsappData}</h1> */}
+			<QRCode value={whatsappData} />
 		</div>
 	);
 }
