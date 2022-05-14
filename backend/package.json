@@ -1,0 +1,42 @@
+{
+  "name": "serverwhatsapp",
+  "version": "0.0.1",
+  "description": "Server Whatsapp Bot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deweks0/whatsapp-server.git"
+  },
+  "keywords": [
+    "server-whatsapp",
+    "nodejs",
+    "javascripit",
+    "whatsappbot"
+  ],
+  "author": "Br4nchs",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/deweks0/whatsapp-server/issues"
+  },
+  "homepage": "https://github.com/deweks0/whatsapp-server#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.1",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^14.3.2",
+    "express": "^4.17.2",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^6.1.8",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.15",
+    "qrcode": "^1.5.0",
+    "qrcode-terminal": "^0.12.0",
+    "socket.io": "^4.4.1",
+    "validator": "^13.7.0",
+    "whatsapp-web.js": "^1.15.4"
+  }
+}

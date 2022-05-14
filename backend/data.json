@@ -1,0 +1,23 @@
+{
+     "users":[
+          {
+               "name":"test",
+               "phone":"123",
+               "email":"test@example.com",
+               "password":"test",
+               "role":"admin",
+               "permissions":[],
+               "session":{},
+               "created_at":""
+          }
+     ],
+     "messages":[
+          {
+               "command":".tagall",
+               "message":"",
+               "message_type":{
+                    "name":"text"
+               }
+          }
+     ]
+}

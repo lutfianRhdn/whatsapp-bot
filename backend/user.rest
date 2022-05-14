@@ -1,0 +1,24 @@
+GET http://localhost:8080/api/users
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNTY2MzA5YzM4MzczYjA1YjM5NTVmZCIsImlhdCI6MTY0OTk1Njg5MiwiZXhwIjoxNjQ5OTU2OTUyfQ.Iyg2Eq190QtMg-A-wt6_WamDLsdEXiMLRVqLFvRo9z0
+
+###
+
+POST http://localhost:8080/api/register
+
+Content-Type: application/json
+
+{
+      "name":"test",
+    "email":"test29@mail.com",
+    "password":"test123",
+    "phone":"0129301930"
+}
+
+###
+Post http://localhost:8080/api/login
+Content-type: application/json
+
+{
+   "email":"test1@mail.com",
+    "password":"test123"
+}
